@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="nav"> 
+            <img class="logo" src="img/logo1.png" alt="Logo">
+            <ul class="navList">
+                <li class="navItem"><a class="navItem navLink" href="/">Inicio</a></li>
+                <li class="navItem"><a class="navItem navLink" href="nosotros.html">Nosotros</a></li>
+                <li class="navItem"><a class="navItem navLink" href="proyectos.html">Proyectos</a></li>
+                <li class="navItem"><a class="navItem navLink" href="productos.html">Productos</a></li>
+                <li class="navItem"><a class="navItem navLink" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactoMain">
+        <div class="contactoH1div">
+            <h1 class="contactoH1">Contacto</h1>
+        </div>
+        <form class="contactoForm" action="">
+            <label class="label nombre" for="nombre">Nombre</label>
+            <input class="nombreInput" type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+
+            <label class="label apellido" for="apellido">Apellido</label>
+            <input class="apellidoInput" type="text" name="apellido" id="apellido" placeholder="Introduzca su apellido">
+
+            <label class="label email" for="email">Email</label>
+            <input class="emailInput" type="text" name="email" id="email" placeholder="Introduzca su dirección de correo electrónico">
+
+            <label class="label contacto" for="contacto">¿Ha tenido contacto anteriormente con la institución?</label>
+
+            <label class="label contactoSi" for="Sí">Sí</label>
+            <input class="contactoSiinput" type="radio" name="contacto" value="Sí">
+
+            <label class="label contactoNo" for="No">No</label>
+            <input class="contactoNoinput" type="radio" name="contacto" value="No">
+
+            <label class="label motivo" for="asunto">Señale el motivo de su consulta</label>
+
+            <select class="select motivoMenu" name="asunto" id="asunto">
+                <option value="institucion">Institución</option>
+                <option value="proyectos">Proyectos</option>
+                <option value="productos">Productos</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label class="label otro" for="otro">En caso de haber seleccionado "otro", ¿cuál es?</label>
+
+            <textarea class="textarea otroTextarea" name="otro" id="otro" cols="30" rows="15"></textarea>
+
+            <label class="label datos" for="sí">He completado todos los datos</label>
+            <input class="datosCheckbox" type="checkbox" name="sí" value="1">
+
+            <input class="enviarYReset enviar" type="submit" value="Enviar">
+            <input class="enviarYReset reset" type="reset" value="Limpiar formulario">
+        </form>
+    </main>
+    <footer class="footer">
+        <h4 class="footerTitle">Buscanos en nuestras redes</h4>
+            <div class="footerDiv facebook">
+                <img class="footerLogo" src="img/facebook.png" alt="facebook">
+                <a target="_blank" class="footerLink" href="https://www.facebook.com/profile.php?id=100009454116910">Facebok</a>
+            </div>
+            <div class="footerDiv instagram">
+                <img class="footerLogo" src="img/instagram.png" alt="instagram">
+                <a target="_blank" class="footerLink" href="https://www.instagram.com/agraria_alvear/?hl=es">Instagram</a>
+            </div>      
+    </footer>
+</body>
+</html>
