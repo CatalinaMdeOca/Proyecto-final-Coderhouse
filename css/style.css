@@ -18,8 +18,7 @@ html{
 
 /* Nav */
 
-.header{
-    width: 100%;
+.bgColor{
     background: linear-gradient(45deg, rgb(28, 146, 210) 0%, rgb(242, 252, 254) 100%);
 }
 
@@ -33,13 +32,18 @@ html{
 }
 
 .logo{
-    width: 95px;
-    height: 95px;
+    width: 50px;
+    height: 50px;
+}
+
+.navListdiv{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navList{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .navItem{
@@ -62,7 +66,7 @@ html{
     color: rgb(0, 0, 0);
     text-decoration: underline;
     background: #082e3f66;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: scale(1.1);
 }
 
@@ -106,16 +110,11 @@ html{
 .facebook{
     display: flex;
     justify-content: flex-end;
-    width: 47%;
-    margin-right: 10px;
-    margin-left: 15px;
 }
 
 .instagram{
     display: flex;
     justify-items: flex-start;
-    width: 47%;
-    margin-left: 20px;
 }
 
 .footerLogo{
@@ -131,7 +130,7 @@ html{
     flex-flow: row wrap;
 }
 
-.h1{
+.indexH1{
     color: rgb(173, 216, 230);
     font-size: 5rem;
     font-weight: 600;
@@ -147,7 +146,6 @@ html{
 }
 
 .section{
-    width: 40%;
     padding: 1rem;
     margin: 1rem;
     text-align: left;
@@ -172,7 +170,6 @@ html{
 
 .section2{
     display: flex;
-    width: 50%;
     height: 600px;
     padding: 1rem;
     margin: 1rem;
@@ -182,8 +179,8 @@ html{
 
 .imgIndex{
     margin: 5px;
-    height: 60%;
-    width: 60%;
+    width: 45%;
+    height: 45%;
     border-radius: 2rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
@@ -193,7 +190,7 @@ html{
     justify-self: flex-start;
     animation-name: alfajor;
     animation-timing-function: linear;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
 }
 
 @keyframes alfajor {
@@ -219,7 +216,7 @@ html{
     justify-self: flex-end;
     animation-name: huerta;
     animation-timing-function: linear;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
 }
 
 @keyframes huerta {
