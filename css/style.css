@@ -354,14 +354,14 @@ html{
 
 .dupla2{
     grid-column: 1/2;
-    grid-row: 6/8;
+    grid-row: 6/9;
     margin: 15px;
     padding: 5px;
 }
 
 .imgDupla2{
     grid-column: 1/2;
-    grid-row: 8/10;
+    grid-row: 9/10;
 }
 
 .dupla3{
