@@ -1,0 +1,38 @@
+.nosMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+
+    div{
+        width: 100%;
+        justify-self: flex-start;
+        align-self: flex-start;
+
+        h1{
+            @include h1;
+        }
+    }
+
+    section{
+        margin: 10px 15px;
+        width: 80%;
+
+        h2{
+            padding: 5px;
+            margin: 5px;
+            color: rgb(253, 207, 120);
+            font-size: 2.5rem;
+        }
+
+        p{
+            text-indent: 1rem;
+            margin: 5px;
+            padding: 5px;
+            font-size: 2rem;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

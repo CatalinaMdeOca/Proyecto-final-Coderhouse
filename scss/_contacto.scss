@@ -1,0 +1,28 @@
+.contactoMain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .contactoH1div{
+        justify-self: flex-start;
+        align-self: flex-start;
+        width: 100%;
+        margin-left: 7rem;
+
+        h1{
+            @include h1;
+        }
+    }
+
+    .contactoForm{
+        border: solid 2px rgb(255, 255, 255);
+        margin: 30px;
+        padding: 20px;
+        width: 45%;
+        justify-self: center;
+        background: $bgcolor3;
+        font-size: 2rem;
+        color: lighten($color3, 10);
+    }
+}
+

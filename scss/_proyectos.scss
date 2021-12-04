@@ -1,0 +1,95 @@
+.mainProyectos{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(50, 2.5rem);
+
+    .proyectosH1div{
+        width: 100%;
+        justify-self: flex-start;
+        align-self: flex-start;
+        grid-column: 1/21;
+        grid-row: 1/6;
+
+        h1{
+            @include h1;
+        }
+    }
+
+    .proyectosSection{
+        grid-column: 1/21;
+        grid-row: 6/18;
+        margin: 15px;
+        padding: 5px;
+
+        h2{
+            font-size: 2.5rem;
+            color: $color3;
+            margin: auto;
+            padding: 1rem;
+        }
+    }
+
+    p{
+        text-indent: 1rem;
+        margin: auto;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+
+    .proyectosH3{
+        margin: auto;
+        padding: 1rem;
+        font-size: 2rem;
+        color: lighten($color3, 10);
+    }
+
+    .dupla1{
+        display: flex;
+        grid-column: 1/21;
+        grid-row: 18/28;
+        margin: 15px;
+        padding: 5px;
+        background: $bgcolor3;
+        border-radius: 7px;
+    }
+
+    .dupla2{
+        grid-column: 1/9;
+        grid-row: 29/50;
+        margin: 15px;
+        padding: 5px;
+        background: $bgcolor3;
+        border-radius: 7px;
+    }
+
+    .dupla3{
+        grid-column: 10/20;
+        grid-row: 29/50;
+        margin: 15px;
+        padding: 5px;
+        background: $bgcolor3;
+        border-radius: 7px;
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 1.5rem;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .proyectosLink{
+        text-decoration: none;
+        color: rgb(0, 10, 34);
+        font-size: 2rem;
+        font-weight: 400;
+
+        &:hover{
+            color: lighten($color2, 35);
+            text-decoration: underline;
+        }
+    }
+}

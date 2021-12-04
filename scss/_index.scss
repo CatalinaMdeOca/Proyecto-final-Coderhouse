@@ -1,0 +1,107 @@
+.mainIndex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainIndex .h1Div{
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.mainIndex h1{
+    @include h1
+}
+
+.section{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.section h2{
+    padding: 5px;
+    margin: 5px;
+    color: rgb(253, 207, 120);
+    font-size: 2.5rem;
+}
+
+.section p{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 400;
+    text-indent: 1.5rem;
+    padding: 1rem
+}
+
+.section2{
+    display: flex;
+    height: 600px;
+    padding: 1rem;
+    margin: 1rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.imgIndex{
+    margin: 5px;
+    width: 45%;
+    height: 45%;
+    border-radius: 2rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.alfajor{
+    align-self: flex-start;
+    justify-self: flex-start;
+    animation-name: alfajor;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+}
+
+@keyframes alfajor {
+    0%{
+        transform: translateY(-60%);
+    }
+    25%{
+        transform: translateY(-45%);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+    75%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+
+.huerta{
+    align-self: flex-end;
+    justify-self: flex-end;
+    animation-name: huerta;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+}
+
+@keyframes huerta {
+    0%{
+        transform: translateY(60%);
+    }
+    25%{
+        transform: translateY(45%);
+    }
+    50%{
+        transform: translateY(30%);
+    }
+    75%{
+        transform: translateY(15%);
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}

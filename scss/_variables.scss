@@ -1,0 +1,16 @@
+$color: rgb(4, 12, 36);
+$color2: rgb(28, 146, 210);
+$color3: rgb(253, 207, 120);
+
+$bgColor1: linear-gradient(90deg, $color2 0%, rgb(242, 252, 254) 100%);
+$bgColor2: linear-gradient(90deg, $color 0%, darken($color2, 15) 100%);
+$bgcolor3: linear-gradient(90deg, lighten($color, 20) 0%, $color2 100%);
+
+@mixin h1 {
+    color: lighten($color2, 35);
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 20px;
+    margin-left: 5rem;
+    padding: 5px;
+}

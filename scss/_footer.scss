@@ -1,0 +1,46 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    background:$bgColor1;
+    display: flex;
+    flex-wrap: wrap;
+
+    .footerTitle{
+        color: $color;
+        margin: 5px;
+        padding: 5px;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .footerLink{
+        text-align: left;
+        width: auto;
+        align-self: center;
+        text-decoration: none;
+        color: $color;
+        font-size: 2rem;
+
+        &:hover{
+            color: lighten($color, 10);
+            text-decoration: underline;
+        }
+    }
+
+    .facebook{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .instagram{
+        display: flex;
+        justify-items: flex-start;
+    }
+
+    .footerLogo{
+        height: 35px;
+        width: 35px;
+        margin: 5px;
+    }
+}
+

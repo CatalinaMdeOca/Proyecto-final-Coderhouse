@@ -10,81 +10,105 @@
     <title>Contacto</title>
 </head>
 <body class="body">
+
+<!-- Header -->
+
     <header>
-        <nav aria-label="breadcrumb" class="nav navbar navbar-expand-lg navbar-light bgColor">
-            <div class="container-fluid">
-                <div class="m-3 p-3">
-                    <a class="navbar-brand" href="/">
-                        <img class="logo" src="img/logo1.png" alt="Logo">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navListdiv" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link navLink" aria-current="page" href="/">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navLink" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="contactoMain">
-        <div class="contactoH1div">
-            <h1 class="contactoH1">Contacto</h1>
+
+<!-- Nav -->
+
+<nav aria-label="breadcrumb" class="navegacion navbar navbar-light navbar-expand-lg bgColor">
+    <div class="container-fluid">
+        <div class="m-3 p-3">
+            <a class="navbar-brand" href="/">
+                <img class="logo" src="img/logo1.png" alt="Logo">
+            </a>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navListdiv" id="navbarNav">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="navLink" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li>
+                    <a class="navLink" href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a class="navLink" href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a class="navLink" href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a class="navLink" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Termina Nav -->
+
+    </header>
+
+<!-- Termina header -->
+
+<!-- Main -->
+
+    <main class="contactoMain">
+
+<!-- H1 -->
+        <div class="contactoH1div">
+            <h1>Contacto</h1>
+        </div>
+
+<!-- Termina H1 -->
+
+<!-- Formulario -->
         <form class="contactoForm" action="">
-            <label class="label nombre" for="nombre">Nombre</label>
-            <input class="nombreInput" type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre">
+            </div>
 
-            <label class="label apellido" for="apellido">Apellido</label>
-            <input class="apellidoInput" type="text" name="apellido" id="apellido" placeholder="Introduzca su apellido">
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Introduzca su apellido">
+            </div>
 
-            <label class="label email" for="email">Email</label>
-            <input class="emailInput" type="text" name="email" id="email" placeholder="Introduzca su dirección de correo electrónico">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Introduzca su dirección de correo electrónico">
+            </div>
 
-            <label class="label contacto" for="contacto">¿Ha tenido contacto anteriormente con la institución?</label>
+            <div>
+                <label for="asunto">Señale el motivo de su consulta</label>
+                <select class="form-select" name="asunto" id="asunto">
+                    <option value="institucion">Institución</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value="productos">Productos</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
 
-            <label class="label contactoSi" for="Sí">Sí</label>
-            <input class="contactoSiinput" type="radio" name="contacto" value="Sí">
+            <div class="mb-3">
+                <label for="otro" class="form-label">En caso de haber seleccionado "otro", ¿cuál es?</label>
+                <textarea class="form-control" name="otro" id="otro" rows="10"></textarea>
+            </div>
 
-            <label class="label contactoNo" for="No">No</label>
-            <input class="contactoNoinput" type="radio" name="contacto" value="No">
-
-            <label class="label motivo" for="asunto">Señale el motivo de su consulta</label>
-
-            <select class="select motivoMenu" name="asunto" id="asunto">
-                <option value="institucion">Institución</option>
-                <option value="proyectos">Proyectos</option>
-                <option value="productos">Productos</option>
-                <option value="otro">Otro</option>
-            </select>
-
-            <label class="label otro" for="otro">En caso de haber seleccionado "otro", ¿cuál es?</label>
-
-            <textarea class="textarea otroTextarea" name="otro" id="otro" cols="30" rows="15"></textarea>
-
-            <label class="label datos" for="sí">He completado todos los datos</label>
-            <input class="datosCheckbox" type="checkbox" name="sí" value="1">
-
-            <input class="enviarYReset enviar" type="submit" value="Enviar">
-            <input class="enviarYReset reset" type="reset" value="Limpiar formulario">
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+
+<!-- Termina Formulario -->
+
     </main>
+
+<!-- Termina Main -->
+
+<!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -106,6 +130,9 @@
             </div>
         </div>      
     </footer>
+
+<!-- Termina footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
