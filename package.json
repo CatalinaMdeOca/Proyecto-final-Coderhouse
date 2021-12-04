@@ -5,16 +5,11 @@
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CatalinaMdeOca/Proyecto-final-Coderhouse.git"
-  },
+  "repository": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CatalinaMdeOca/Proyecto-final-Coderhouse/issues"
-  },
-  "homepage": "https://github.com/CatalinaMdeOca/Proyecto-final-Coderhouse#readme",
+  "bugs": {},
+  "homepage": "",
   "description": ""
 }
