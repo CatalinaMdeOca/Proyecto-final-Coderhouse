@@ -63,8 +63,13 @@ html {
   color: #040c24;
   margin: 5px;
   padding: 5px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer .footerTitle {
+    font-size: 2.5rem;
+  }
 }
 .footer .footerLink {
   text-align: left;
@@ -72,11 +77,16 @@ html {
   align-self: center;
   text-decoration: none;
   color: #040c24;
-  font-size: 2rem;
+  font-size: 1rem;
 }
-.footer .footerLink:hover {
-  color: #091b52;
-  text-decoration: underline;
+@media screen and (min-width: 768px) {
+  .footer .footerLink {
+    font-size: 2rem;
+  }
+  .footer .footerLink:hover {
+    color: #091b52;
+    text-decoration: underline;
+  }
 }
 .footer .facebook {
   display: flex;
@@ -96,112 +106,148 @@ html {
   display: flex;
   flex-flow: row wrap;
 }
-
 .mainIndex .h1Div {
   width: 100%;
   justify-self: flex-start;
   align-self: flex-start;
 }
-
-.mainIndex h1 {
+.mainIndex .h1Div h1 {
   color: #addbf4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
   padding: 5px;
 }
-
-.section {
+@media screen and (min-width: 768px) {
+  .mainIndex .h1Div h1 {
+    font-size: 5rem;
+  }
+}
+.mainIndex .section {
   padding: 1rem;
   margin: 1rem;
   text-align: left;
-  justify-self: flex-start;
-  align-self: center;
 }
-
-.section h2 {
+.mainIndex .section h2 {
   padding: 5px;
   margin: 5px;
   color: #fdcf78;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-
-.section p {
+@media screen and (min-width: 768px) {
+  .mainIndex .section h2 {
+    font-size: 2.5rem;
+  }
+}
+.mainIndex .section p {
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   text-indent: 1.5rem;
   padding: 1rem;
 }
-
-.section2 {
+@media screen and (min-width: 768px) {
+  .mainIndex .section p {
+    font-size: 2.5rem;
+  }
+}
+.mainIndex .section2 {
   display: flex;
-  height: 600px;
+  flex-direction: column;
   padding: 1rem;
   margin: 1rem;
-  justify-self: flex-end;
-  align-self: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-
-.imgIndex {
+.mainIndex .section2 .imgIndex {
   margin: 5px;
-  width: 45%;
-  height: 45%;
+  width: 80%;
+  height: 100%;
   border-radius: 2rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
-
-.alfajor {
+@media screen and (min-width: 768px) {
+  .mainIndex .section2 .imgIndex {
+    width: 45%;
+    height: 45%;
+  }
+}
+.mainIndex .section2 .divAlfajor {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .mainIndex .section2 .divAlfajor {
+    justify-content: flex-start;
+  }
+}
+.mainIndex .section2 .alfajor {
   align-self: flex-start;
   justify-self: flex-start;
-  animation-name: alfajor;
-  animation-timing-function: linear;
-  animation-duration: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .mainIndex .section2 .alfajor {
+    animation-name: alfajor;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+  }
+  @keyframes alfajor {
+    0% {
+      transform: translateY(-60%);
+    }
+    25% {
+      transform: translateY(-45%);
+    }
+    50% {
+      transform: translateY(-30%);
+    }
+    75% {
+      transform: translateY(-15%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
+.mainIndex .section2 .divHuerta {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .mainIndex .section2 .divHuerta {
+    justify-content: flex-end;
+  }
+}
+.mainIndex .section2 .huerta {
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .mainIndex .section2 .huerta {
+    animation-name: huerta;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+  }
+  @keyframes huerta {
+    0% {
+      transform: translateY(60%);
+    }
+    25% {
+      transform: translateY(45%);
+    }
+    50% {
+      transform: translateY(30%);
+    }
+    75% {
+      transform: translateY(15%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
 }
 
-@keyframes alfajor {
-  0% {
-    transform: translateY(-60%);
-  }
-  25% {
-    transform: translateY(-45%);
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  75% {
-    transform: translateY(-15%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-.huerta {
-  align-self: flex-end;
-  justify-self: flex-end;
-  animation-name: huerta;
-  animation-timing-function: linear;
-  animation-duration: 0.5s;
-}
-
-@keyframes huerta {
-  0% {
-    transform: translateY(60%);
-  }
-  25% {
-    transform: translateY(45%);
-  }
-  50% {
-    transform: translateY(30%);
-  }
-  75% {
-    transform: translateY(15%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 .nosMain {
   display: flex;
   flex-direction: row;
@@ -216,11 +262,16 @@ html {
 }
 .nosMain div h1 {
   color: #addbf4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
   padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  .nosMain div h1 {
+    font-size: 5rem;
+  }
 }
 .nosMain section {
   margin: 10px 15px;
@@ -255,11 +306,16 @@ html {
 }
 .mainProyectos .proyectosH1div h1 {
   color: #addbf4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
   padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  .mainProyectos .proyectosH1div h1 {
+    font-size: 5rem;
+  }
 }
 .mainProyectos .proyectosSection {
   grid-column: 1/21;
@@ -343,11 +399,16 @@ html {
 }
 .prodMain .prodH1div h1 {
   color: #addbf4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
   padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  .prodMain .prodH1div h1 {
+    font-size: 5rem;
+  }
 }
 .prodMain .cards {
   background: #96d1f1;
@@ -393,11 +454,16 @@ html {
 }
 .contactoMain .contactoH1div h1 {
   color: #addbf4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
   padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  .contactoMain .contactoH1div h1 {
+    font-size: 5rem;
+  }
 }
 .contactoMain .contactoForm {
   border: solid 2px white;
