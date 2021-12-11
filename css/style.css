@@ -281,15 +281,25 @@ html {
   padding: 5px;
   margin: 5px;
   color: #fdcf78;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nosMain section h2 {
+    font-size: 2.5rem;
+  }
 }
 .nosMain section p {
   text-indent: 1rem;
   margin: 5px;
   padding: 5px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  .nosMain section p {
+    font-size: 2rem;
+  }
 }
 
 .mainProyectos {

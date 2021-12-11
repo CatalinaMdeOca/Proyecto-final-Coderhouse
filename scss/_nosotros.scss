@@ -23,16 +23,24 @@
             padding: 5px;
             margin: 5px;
             color: rgb(253, 207, 120);
-            font-size: 2.5rem;
+            font-size: 1.5rem;
+
+            @media screen and (min-width: 768px) {
+                font-size: 2.5rem;
+            }
         }
 
         p{
             text-indent: 1rem;
             margin: 5px;
             padding: 5px;
-            font-size: 2rem;
+            font-size: 1rem;
             font-weight: 400;
             color: rgb(255, 255, 255);
+
+            @media screen and (min-width: 768px) {
+                font-size: 2rem;
+            }
         }
     }
 }
