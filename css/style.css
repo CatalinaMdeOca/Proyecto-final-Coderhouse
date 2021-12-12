@@ -422,33 +422,61 @@ html {
 }
 .prodMain .cards {
   background: #96d1f1;
-  width: 400px;
+  width: 300px;
   border-radius: 1rem;
   box-shadow: 0 7px 8px 0 rgba(255, 255, 255, 0.4);
   margin: 2rem;
   padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .prodMain .cards {
+    width: 400px;
+  }
 }
 .prodMain .cards h3 {
   padding: 5px;
   margin: 5px;
   color: #040c24;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .prodMain .cards h3 {
+    font-size: 2rem;
+  }
 }
 .prodMain .cards p {
   color: #040c24;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  text-indent: 1.5rem;
+  text-indent: 0.5rem;
   padding: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .prodMain .cards p {
+    font-size: 1.5rem;
+  }
+}
 .prodMain .cards img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   border-radius: 1.5rem;
   margin: 10px;
   padding: 10px;
   justify-self: center;
+}
+@media screen and (min-width: 768px) {
+  .prodMain .cards img {
+    height: 250px;
+    width: 250px;
+    border-radius: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    justify-self: center;
+  }
 }
 
 .contactoMain {
