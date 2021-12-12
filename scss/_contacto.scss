@@ -4,10 +4,14 @@
     flex-wrap: wrap;
 
     .contactoH1div{
-        justify-self: flex-start;
-        align-self: flex-start;
-        width: 100%;
-        margin-left: 7rem;
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            justify-self: flex-start;
+            align-self: flex-start;
+            margin-left: 7rem;
+        }
+        
 
         h1{
             @include h1;
@@ -18,11 +22,20 @@
         border: solid 2px rgb(255, 255, 255);
         margin: 30px;
         padding: 20px;
-        width: 45%;
-        justify-self: center;
+        width: 90%;
         background: $bgcolor3;
-        font-size: 2rem;
+        font-size: 1rem;
         color: lighten($color3, 10);
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
+            width: 70%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2rem;
+            width: 45%;
+        }
     }
 }
 

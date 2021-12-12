@@ -1,14 +1,22 @@
 .mainProyectos{
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(50, 2.5rem);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(57, 2.5rem);
+
+    @media screen and (min-width: 1024px){
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(50, 2.5rem);
+    }
+    
 
     .proyectosH1div{
-        width: 100%;
-        justify-self: flex-start;
-        align-self: flex-start;
-        grid-column: 1/21;
-        grid-row: 1/6;
+        grid-column: 1/11;
+        grid-row: 1/5;
+
+        @media screen and (min-width: 1024px){
+            grid-column: 1/21;
+            grid-row: 1/6;
+        }
 
         h1{
             @include h1;
@@ -16,16 +24,25 @@
     }
 
     .proyectosSection{
-        grid-column: 1/21;
-        grid-row: 6/18;
+        grid-column: 1/10;
+        grid-row: 5/13;
         margin: 15px;
         padding: 5px;
 
+        @media screen and (min-width: 1024px) {
+            grid-column: 1/21;
+            grid-row: 6/18;
+        }
+
         h2{
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             color: $color3;
             margin: auto;
             padding: 1rem;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -33,44 +50,67 @@
         text-indent: 1rem;
         margin: auto;
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2rem;
+        }
     }
 
     .proyectosH3{
         margin: auto;
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
         color: lighten($color3, 10);
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2rem;
+        }
     }
 
     .dupla1{
         display: flex;
-        grid-column: 1/21;
-        grid-row: 18/28;
+        grid-column: 1/10;
+        grid-row: 14/28;
         margin: 15px;
         padding: 5px;
         background: $bgcolor3;
         border-radius: 7px;
+
+        @media screen and (min-width: 1024px) {
+            grid-column: 1/21;
+            grid-row: 18/28;
+        }
     }
 
     .dupla2{
-        grid-column: 1/9;
-        grid-row: 29/50;
+        grid-column: 1/10;
+        grid-row: 28/41;
         margin: 15px;
         padding: 5px;
         background: $bgcolor3;
         border-radius: 7px;
+
+        @media screen and (min-width: 1024px) {
+            grid-column: 1/9;
+            grid-row: 29/50;
+        }
     }
 
     .dupla3{
-        grid-column: 10/20;
-        grid-row: 29/50;
+        grid-column: 1/10;
+        grid-row: 41/57;
         margin: 15px;
         padding: 5px;
         background: $bgcolor3;
         border-radius: 7px;
+
+        @media screen and (min-width: 768px1024px) {
+            grid-column: 10/20;
+            grid-row: 29/50;
+        }
     }
 
     img{
@@ -84,12 +124,16 @@
     .proyectosLink{
         text-decoration: none;
         color: rgb(0, 10, 34);
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
 
-        &:hover{
-            color: lighten($color2, 35);
-            text-decoration: underline;
+        @media screen and (min-width: 1024px) {
+            font-size: 2rem;
+
+            &:hover{
+                color: lighten($color2, 35);
+                text-decoration: underline;
+            }
         }
     }
 }
