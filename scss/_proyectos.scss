@@ -1,11 +1,16 @@
 .mainProyectos{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(57, 2.5rem);
+    grid-template-rows: repeat(55, 2.5rem);
+
+    @media screen and (min-width: 768px){
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(67, 2.5rem);
+    }
 
     @media screen and (min-width: 1024px){
         grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: repeat(50, 2.5rem);
+        grid-template-rows: repeat(46, 2.5rem);
     }
     
 
@@ -13,9 +18,14 @@
         grid-column: 1/11;
         grid-row: 1/5;
 
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 768px){
             grid-column: 1/21;
             grid-row: 1/6;
+        }
+
+        @media screen and (min-width: 1024px){
+            grid-column: 1/21;
+            grid-row: 1/5;
         }
 
         h1{
@@ -29,9 +39,14 @@
         margin: 15px;
         padding: 5px;
 
+        @media screen and (min-width: 768px) {
+            grid-column: 1/21;
+            grid-row: 6/19;
+        }
+
         @media screen and (min-width: 1024px) {
             grid-column: 1/21;
-            grid-row: 6/18;
+            grid-row: 5/15;
         }
 
         h2{
@@ -40,7 +55,7 @@
             margin: auto;
             padding: 1rem;
 
-            @media screen and (min-width: 1024px) {
+            @media screen and (min-width: 768px) {
                 font-size: 2.5rem;
             }
         }
@@ -53,8 +68,9 @@
         font-size: 1rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
+        width: 100%;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             font-size: 2rem;
         }
     }
@@ -65,13 +81,16 @@
         font-size: 1rem;
         color: lighten($color3, 10);
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             font-size: 2rem;
         }
     }
 
     .dupla1{
         display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
         grid-column: 1/10;
         grid-row: 14/28;
         margin: 15px;
@@ -79,13 +98,25 @@
         background: $bgcolor3;
         border-radius: 7px;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             grid-column: 1/21;
-            grid-row: 18/28;
+            grid-row: 19/35;
+        }
+
+        @media screen and (min-width: 1024px) {
+            grid-column: 2/20;
+            grid-row: 16/25;
+
+            display: flex;
+            flex-wrap: nowrap;
         }
     }
 
     .dupla2{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
         grid-column: 1/10;
         grid-row: 28/41;
         margin: 15px;
@@ -93,23 +124,37 @@
         background: $bgcolor3;
         border-radius: 7px;
 
+        @media screen and (min-width: 768px) {
+            grid-column: 1/21;
+            grid-row: 35/50;
+        }
+
         @media screen and (min-width: 1024px) {
-            grid-column: 1/9;
-            grid-row: 29/50;
+            grid-column: 2/9;
+            grid-row: 26/46;
         }
     }
 
     .dupla3{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
         grid-column: 1/10;
-        grid-row: 41/57;
+        grid-row: 41/55;
         margin: 15px;
         padding: 5px;
         background: $bgcolor3;
         border-radius: 7px;
 
-        @media screen and (min-width: 768px1024px) {
+        @media screen and (min-width: 768px) {
+            grid-column: 1/21;
+            grid-row: 50/67;
+        }
+
+        @media screen and (min-width: 1024px) {
             grid-column: 10/20;
-            grid-row: 29/50;
+            grid-row: 26/46;
         }
     }
 
@@ -127,9 +172,11 @@
         font-size: 1rem;
         font-weight: 400;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             font-size: 2rem;
+        }
 
+        @media screen and (min-width: 1024px) {
             &:hover{
                 color: lighten($color2, 35);
                 text-decoration: underline;
