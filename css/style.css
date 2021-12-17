@@ -102,9 +102,11 @@ html {
   margin: 5px;
 }
 
-.mainIndex {
-  display: flex;
-  flex-flow: row wrap;
+@media screen and (min-width: 1024px) {
+  .mainIndex {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 .mainIndex .h1Div {
   width: 100%;
@@ -113,7 +115,7 @@ html {
 }
 .mainIndex .h1Div h1 {
   color: #addbf4;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
@@ -125,15 +127,21 @@ html {
   }
 }
 .mainIndex .section {
-  padding: 1rem;
-  margin: 1rem;
+  width: 100%;
   text-align: left;
 }
+@media screen and (min-width: 1024px) {
+  .mainIndex .section {
+    width: 45%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
 .mainIndex .section h2 {
-  padding: 5px;
-  margin: 5px;
+  padding: 1rem;
+  margin: 1rem;
   color: #fdcf78;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .mainIndex .section h2 {
@@ -142,29 +150,36 @@ html {
 }
 .mainIndex .section p {
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-indent: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .mainIndex .section p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .mainIndex .section2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  margin: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .mainIndex .section2 {
+    width: 45%;
+    padding: 1rem;
+    margin: 1rem;
+  }
 }
 .mainIndex .section2 .imgIndex {
   margin: 5px;
-  width: 80%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   border-radius: 2rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
@@ -172,6 +187,12 @@ html {
   .mainIndex .section2 .imgIndex {
     width: 45%;
     height: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainIndex .section2 .imgIndex {
+    width: 70%;
+    height: 80%;
   }
 }
 .mainIndex .section2 .divAlfajor {
@@ -182,10 +203,6 @@ html {
   .mainIndex .section2 .divAlfajor {
     justify-content: flex-start;
   }
-}
-.mainIndex .section2 .alfajor {
-  align-self: flex-start;
-  justify-self: flex-start;
 }
 @media screen and (min-width: 768px) {
   .mainIndex .section2 .alfajor {
@@ -219,9 +236,6 @@ html {
   .mainIndex .section2 .divHuerta {
     justify-content: flex-end;
   }
-}
-.mainIndex .section2 .huerta {
-  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .mainIndex .section2 .huerta {
@@ -262,7 +276,7 @@ html {
 }
 .nosMain div h1 {
   color: #addbf4;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
@@ -278,10 +292,10 @@ html {
   width: 80%;
 }
 .nosMain section h2 {
-  padding: 5px;
-  margin: 5px;
+  padding: 1rem;
+  margin: 1rem;
   color: #fdcf78;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .nosMain section h2 {
@@ -289,12 +303,11 @@ html {
   }
 }
 .nosMain section p {
-  text-indent: 1rem;
-  margin: 5px;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: 400;
   color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-indent: 1.5rem;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .nosMain section p {
@@ -305,7 +318,7 @@ html {
 .mainProyectos {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(55, 2.5rem);
+  grid-template-rows: repeat(74, 2.5rem);
 }
 @media screen and (min-width: 768px) {
   .mainProyectos {
@@ -321,7 +334,7 @@ html {
 }
 .mainProyectos .proyectosH1div {
   grid-column: 1/11;
-  grid-row: 1/5;
+  grid-row: 1/6;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos .proyectosH1div {
@@ -337,7 +350,7 @@ html {
 }
 .mainProyectos .proyectosH1div h1 {
   color: #addbf4;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
@@ -350,9 +363,9 @@ html {
 }
 .mainProyectos .proyectosSection {
   grid-column: 1/10;
-  grid-row: 5/13;
-  margin: 15px;
-  padding: 5px;
+  grid-row: 6/25;
+  margin: 2rem;
+  padding: 2rem;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos .proyectosSection {
@@ -367,10 +380,10 @@ html {
   }
 }
 .mainProyectos .proyectosSection h2 {
-  font-size: 1.5rem;
-  color: #fdcf78;
-  margin: auto;
   padding: 1rem;
+  margin: 1rem;
+  color: #fdcf78;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos .proyectosSection h2 {
@@ -378,13 +391,11 @@ html {
   }
 }
 .mainProyectos p {
-  text-indent: 1rem;
-  margin: auto;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
   color: white;
-  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-indent: 1.5rem;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos p {
@@ -394,7 +405,7 @@ html {
 .mainProyectos .proyectosH3 {
   margin: auto;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fee1aa;
 }
 @media screen and (min-width: 768px) {
@@ -408,7 +419,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 14/28;
+  grid-row: 21/38;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
@@ -434,7 +445,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 28/41;
+  grid-row: 38/55;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
@@ -458,7 +469,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 41/55;
+  grid-row: 55/73;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
@@ -486,7 +497,7 @@ html {
 .mainProyectos .proyectosLink {
   text-decoration: none;
   color: #000a22;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
@@ -514,7 +525,7 @@ html {
 }
 .prodMain .prodH1div h1 {
   color: #addbf4;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;
@@ -543,35 +554,38 @@ html {
   }
 }
 .prodMain .cards h3 {
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
   color: #040c24;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .prodMain .cards h3 {
     font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
   }
 }
 .prodMain .cards p {
   color: #040c24;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  text-indent: 1rem;
-  padding: 1rem;
+  text-indent: 0.75rem;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .prodMain .cards p {
-    font-size: 1.5rem;
+    padding: 1rem;
+    text-indent: 1rem;
   }
 }
 .prodMain .cards img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 1.5rem;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   justify-self: center;
 }
 @media screen and (min-width: 768px) {
@@ -582,6 +596,8 @@ html {
     margin: 10px;
     padding: 10px;
     justify-self: center;
+    margin: 10px;
+    padding: 10px;
   }
 }
 
@@ -600,7 +616,7 @@ html {
 }
 .contactoMain .contactoH1div h1 {
   color: #addbf4;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 20px;
   margin-left: 5rem;

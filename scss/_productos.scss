@@ -31,35 +31,38 @@
         }
     
         h3{
-            padding: 5px;
-            margin: 5px;
+            padding: 2px;
+            margin: 2px;
             color: $color;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 600;
 
             @media screen and (min-width: 768px) {
                 font-size: 2rem;
+                padding: 5px;
+                margin: 5px;
             }
         }
     
         p{
             color: $color;
-            font-size: 0.8rem;
+            font-size: 1.5rem;
             font-weight: 400;
-            text-indent: 1rem;
-            padding: 1rem;
+            text-indent: 0.75rem;
+            padding: 0.5rem;
 
             @media screen and (min-width: 768px) {
-                font-size: 1.5rem;
+                padding: 1rem;
+                text-indent: 1rem;
             }
         }
     
         img{
-            height: 200px;
-            width: 200px;
+            height: 250px;
+            width: 250px;
             border-radius: 1.5rem;
-            margin: 10px;
-            padding: 10px;
+            margin: 5px;
+            padding: 5px;
             justify-self: center;
 
             @media screen and (min-width: 768px) {
@@ -69,6 +72,8 @@
                 margin: 10px;
                 padding: 10px;
                 justify-self: center;
+                margin: 10px;
+                padding: 10px;
             }
         }
     }
