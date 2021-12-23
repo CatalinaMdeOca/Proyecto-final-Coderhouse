@@ -15,6 +15,7 @@ html {
 }
 
 .navegacion {
+  width: 100%;
   text-align: center;
   padding: 10px;
   display: flex;
@@ -54,30 +55,32 @@ html {
 
 .footer {
   width: 100%;
-  text-align: center;
   background: linear-gradient(90deg, #1c92d2 0%, #f2fcfe 100%);
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
 }
 .footer .footerTitle {
   color: #040c24;
-  margin: 5px;
-  padding: 5px;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 2rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer .footerTitle {
     font-size: 2.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
   }
 }
 .footer .footerLink {
-  text-align: left;
   width: auto;
   align-self: center;
   text-decoration: none;
   color: #040c24;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer .footerLink {
@@ -91,10 +94,28 @@ html {
 .footer .facebook {
   display: flex;
   justify-content: flex-end;
+  width: 40%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer .facebook {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .footer .instagram {
   display: flex;
-  justify-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer .instagram {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .footer .footerLogo {
   height: 35px;
@@ -102,6 +123,9 @@ html {
   margin: 5px;
 }
 
+.mainIndex {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .mainIndex {
     display: flex;
@@ -118,12 +142,12 @@ html {
   font-size: 4rem;
   font-weight: 600;
   margin: 20px;
-  margin-left: 5rem;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .mainIndex .h1Div h1 {
     font-size: 5rem;
+    margin-left: 5rem;
   }
 }
 .mainIndex .section {
@@ -279,12 +303,12 @@ html {
   font-size: 4rem;
   font-weight: 600;
   margin: 20px;
-  margin-left: 5rem;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .nosMain div h1 {
     font-size: 5rem;
+    margin-left: 5rem;
   }
 }
 .nosMain section {
@@ -353,12 +377,12 @@ html {
   font-size: 4rem;
   font-weight: 600;
   margin: 20px;
-  margin-left: 5rem;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos .proyectosH1div h1 {
     font-size: 5rem;
+    margin-left: 5rem;
   }
 }
 .mainProyectos .proyectosSection {
@@ -528,12 +552,12 @@ html {
   font-size: 4rem;
   font-weight: 600;
   margin: 20px;
-  margin-left: 5rem;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .prodMain .prodH1div h1 {
     font-size: 5rem;
+    margin-left: 5rem;
   }
 }
 .prodMain .cards {
@@ -619,12 +643,12 @@ html {
   font-size: 4rem;
   font-weight: 600;
   margin: 20px;
-  margin-left: 5rem;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .contactoMain .contactoH1div h1 {
     font-size: 5rem;
+    margin-left: 5rem;
   }
 }
 .contactoMain .contactoForm {
@@ -646,6 +670,14 @@ html {
   .contactoMain .contactoForm {
     font-size: 2rem;
     width: 45%;
+  }
+}
+.contactoMain .contactoForm div {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contactoMain .contactoForm div {
+    padding: 1rem;
   }
 }
 

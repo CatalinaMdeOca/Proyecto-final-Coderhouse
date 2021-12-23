@@ -11,11 +11,11 @@ $bgcolor3: linear-gradient(90deg, lighten($color, 20) 0%, $color2 100%);
     font-size: 4rem;
     font-weight: 600;
     margin: 20px;
-    margin-left: 5rem;
     padding: 5px;
 
     @media screen and (min-width: 768px) {
         font-size: 5rem;
+        margin-left: 5rem;
     }
 }
 
