@@ -342,7 +342,7 @@ html {
 .mainProyectos {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(74, 2.5rem);
+  grid-template-rows: repeat(76, 2.5rem);
 }
 @media screen and (min-width: 768px) {
   .mainProyectos {
@@ -387,14 +387,16 @@ html {
 }
 .mainProyectos .proyectosSection {
   grid-column: 1/10;
-  grid-row: 6/25;
-  margin: 2rem;
-  padding: 2rem;
+  grid-row: 6/23;
+  margin: 1rem;
+  padding: 1rem;
 }
 @media screen and (min-width: 768px) {
   .mainProyectos .proyectosSection {
     grid-column: 1/21;
     grid-row: 6/19;
+    margin: 2rem;
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -443,7 +445,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 21/38;
+  grid-row: 23/40;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
@@ -469,7 +471,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 38/55;
+  grid-row: 40/57;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
@@ -493,7 +495,7 @@ html {
   align-content: center;
   justify-content: center;
   grid-column: 1/10;
-  grid-row: 55/73;
+  grid-row: 57/76;
   margin: 15px;
   padding: 5px;
   background: linear-gradient(90deg, #0e2b80 0%, #1c92d2 100%);
