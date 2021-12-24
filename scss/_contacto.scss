@@ -1,6 +1,5 @@
 .contactoMain{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 
     .contactoH1div{
@@ -35,6 +34,7 @@
         @media screen and (min-width: 1024px) {
             font-size: 2rem;
             width: 45%;
+            margin: 15px;
         }
 
         div{
@@ -42,6 +42,30 @@
 
             @media screen and (min-width: 768px) {
                 padding: 1rem;
+            }
+        }
+    }
+
+    .iframeDiv{
+        width: 90%;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 45%;
+            margin: 15px;
+        }
+
+        iframe {
+            height: 300px;
+
+            @media screen and (min-width: 768px) {
+                height: 400px;
             }
         }
     }

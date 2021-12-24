@@ -629,7 +629,6 @@ html {
 
 .contactoMain {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1024px) {
@@ -672,6 +671,7 @@ html {
   .contactoMain .contactoForm {
     font-size: 2rem;
     width: 45%;
+    margin: 15px;
   }
 }
 .contactoMain .contactoForm div {
@@ -680,6 +680,31 @@ html {
 @media screen and (min-width: 768px) {
   .contactoMain .contactoForm div {
     padding: 1rem;
+  }
+}
+.contactoMain .iframeDiv {
+  width: 90%;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .contactoMain .iframeDiv {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contactoMain .iframeDiv {
+    width: 45%;
+    margin: 15px;
+  }
+}
+.contactoMain .iframeDiv iframe {
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .contactoMain .iframeDiv iframe {
+    height: 400px;
   }
 }
 
