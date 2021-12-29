@@ -11,5 +11,8 @@
   "license": "ISC",
   "bugs": {},
   "homepage": "",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

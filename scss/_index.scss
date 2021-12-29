@@ -77,32 +77,6 @@
             }
         }
 
-        .alfajor{
-            @media screen and (min-width: 768px) {
-                    animation-name: alfajor;
-                    animation-timing-function: linear;
-                    animation-duration: 0.5s;
-
-                @keyframes alfajor {
-                    0%{
-                        transform: translateY(-60%);
-                    }
-                    25%{
-                        transform: translateY(-45%);
-                    }
-                    50%{
-                        transform: translateY(-30%);
-                    }
-                    75%{
-                        transform: translateY(-15%);
-                    }
-                    100%{
-                        transform: translateY(0%)
-                    }
-                }
-            }
-        }
-
         .divHuerta{
             display: flex;
             justify-content: center;
@@ -112,30 +86,5 @@
             }
         }
 
-        .huerta{
-            @media screen and (min-width: 768px) {
-                animation-name: huerta;
-                animation-timing-function: linear;
-                animation-duration: 0.5s;
-
-                @keyframes huerta {
-                    0%{
-                        transform: translateY(60%);
-                    }
-                    25%{
-                        transform: translateY(45%);
-                    }
-                    50%{
-                        transform: translateY(30%);
-                    }
-                    75%{
-                        transform: translateY(15%);
-                    }
-                    100%{
-                        transform: translateY(0%)
-                    }
-                }
-            }
-        }
     }
 }

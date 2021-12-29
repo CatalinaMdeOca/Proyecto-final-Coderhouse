@@ -228,30 +228,6 @@ html {
     justify-content: flex-start;
   }
 }
-@media screen and (min-width: 768px) {
-  .mainIndex .section2 .alfajor {
-    animation-name: alfajor;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-  }
-  @keyframes alfajor {
-    0% {
-      transform: translateY(-60%);
-    }
-    25% {
-      transform: translateY(-45%);
-    }
-    50% {
-      transform: translateY(-30%);
-    }
-    75% {
-      transform: translateY(-15%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
-}
 .mainIndex .section2 .divHuerta {
   display: flex;
   justify-content: center;
@@ -259,30 +235,6 @@ html {
 @media screen and (min-width: 768px) {
   .mainIndex .section2 .divHuerta {
     justify-content: flex-end;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mainIndex .section2 .huerta {
-    animation-name: huerta;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-  }
-  @keyframes huerta {
-    0% {
-      transform: translateY(60%);
-    }
-    25% {
-      transform: translateY(45%);
-    }
-    50% {
-      transform: translateY(30%);
-    }
-    75% {
-      transform: translateY(15%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
   }
 }
 
@@ -313,6 +265,7 @@ html {
 }
 .nosMain section {
   margin: 10px 15px;
+  padding: 1rem;
   width: 80%;
 }
 .nosMain section h2 {
