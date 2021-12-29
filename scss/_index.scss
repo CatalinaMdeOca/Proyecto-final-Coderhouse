@@ -38,9 +38,8 @@
     .section2{
         width: 100%;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
         align-content: center;
         margin-bottom: 1.5rem;
 
@@ -52,37 +51,55 @@
 
         .imgIndex{
             margin: 5px;
-            width: 70%;
-            height: 70%;
+            height: 80%;
+            width: 80%;
             border-radius: 2rem;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 
             @media screen and (min-width: 768px) {
-                width: 45%;
-                height: 45%;
+                width: 70%;
+                height: 70%;
             }
 
             @media screen and (min-width: 1024px) {
                 width: 70%;
-                height: 80%;
+                height: 90%;
             }
         }
 
         .divAlfajor{
             display: flex;
             justify-content: center;
+            width: 70%;
+            height: 70%;
 
             @media screen and (min-width: 768px) {
+                width: 55%;
+                height: 55%;
                 justify-content: flex-start;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 100%;
+                height: 45%;
             }
         }
 
         .divHuerta{
             display: flex;
             justify-content: center;
+            width: 70%;
+            height: 70%;
 
             @media screen and (min-width: 768px) {
+                width: 55%;
+                height: 55%;
                 justify-content: flex-end;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 100%;
+                height: 45%;
             }
         }
 
